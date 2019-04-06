@@ -1,0 +1,16 @@
+# 4. Motivation
+
+Before we proceed any further, let's find myself within all this data using
+criteras that matches my incident. I got stabbed on 02/21/2014 a little after 11
+PM  near Bank of America in Fields Corner. Base on the nature of the crime, for
+column "INCIDENT_TYPE_DESCRIPTION" it most likely would be classified as
+"ROBBERY" and since this happened in Fields Corner, the "REPTDISTRICT" would be
+"C11".
+
+data['FROMDATE'] = pd.to_datetime(data['FROMDATE'])
+data.head()
+
+# possible_me = data[(data.INCIDENT_TYPE_DESCRIPTION == "ROBBERY") &
+#                    (data.REPTDISTRICT == "C11") &
+#                   (data.FROMDATE.year == 2014) & (data.FROMDATE.month == 2)& (data.FROMDATE.day == 21)]
+# possible_me.head()
